@@ -34,7 +34,7 @@ const Login = () => {
         type: "LOGGED_IN_USER",
         payload: userData,
       });
-      navigate("/");
+      window.location.href = "/";
       }
     } catch (error) {
       toast.error(error.message);
